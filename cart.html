@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <!-- DROPDOWN MENU -->
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Menu
+        </button>
+        <br>
+        <br>
+        <ul class="menu" style="display:none;">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="cart.html">Cart</a></li>
+            <li class="menu-item"><a href="lion.html">Colin the Lion</a></li>
+            <li class="menu-item"><a href="giraffe.html">Gertrude the Giraffe</a></li>
+            <li class="menu-item"><a href="sloth.html">Cyril the Sloth</a></li>
+        </ul>
+    </div>
+<!-- NAV BAR -->
+    <div class="navbar">
+        <a href="index.html">
+            <h2 id="title">Adopt an Animal</h2>
+        </a>
+
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">
+                    <p class="cartTotal"></p>
+                </div>
+                <p> Incl. VAT</p>
+            </div>
+        </a>
+    </div>
+    <br>
+
+    <!-- BOOTSTRAP TABLE HERE TO HOUSE THE (FULL SIZED) SHOPPING CART -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col" class="productHeading">Animal Friend</th>
+                <th scope="col" class="costHeading">Cost</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <!-- DISCOUNT BOX -->
+    <span class="centre">
+        <div class="discountCodeLabel">
+            <label for="discount">Discount</label>
+            <input type="text" class="discountCode" />
+            <button class="discountBtn">Apply discount</button>
+        </div>
+    </span>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- DELIVERY OPTIONS -->
+    <span class="centre">
+        <h4>Delivery Options</h4>
+        <select id="deliveryDropdown">
+            <option value="none">Select Option</option>
+            <option value="collection">Collection - FREE</option>
+            <option value="delivery">Delivery - £5</option>
+        </select>
+    </span>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- CONFIRM ORDER -->
+    <div class="confirmOrderLabel">
+        <span class="centre">
+            <p>All done? Progress your order here.<p>
+                    <button onclick="myFunction()">Confirm Order</button>
+                    <p id="orderNumber"></p>
+        </span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="#menu1" class="top">Back to top</a>
+    <br>
+    <script src="src/data.js"></script>
+    <script src="src/cart.js"></script>
+    <script src="src/main.js"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril - The Sloth (Zzzzzzz)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Menu
+            </button>
+            <br>
+            <br>
+            <ul class="menu" style="display:none;">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="cart.html">Cart</a></li>
+                <li class="menu-item"><a href="lion.html">Colin the Lion</a></li>
+                <li class="menu-item"><a href="giraffe.html">Gertrude the Giraffe</a></li>
+                <li class="menu-item"><a href="sloth.html">Cyril the Sloth</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="navbar">
+            <a href="index.html">
+                <h2 id="title">Adopt an Animal</h2>
+            </a>
+            <a href="cart.html">
+                <div class="cart">
+                    <i class="bi bi-cart2"></i>
+                    <div id="cartAmount" class="cartAmount">
+                        <p class="cartTotal"></p>
+                    </div>
+                    <p> Incl. VAT</p>
+                </div>
+            </a>
+
+        </div>
+    </header>
+
+    <div class="animalContainer">
+        <h1 class="aboutAnimalTitle">Cyril, the Sloth.</h1>
+        <br>
+        <br>
+        <div class="aboutAnimalInfo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, in non asperiores
+            nisi illum error voluptate rem at fuga dolorum eum unde officiis sapiente rerum, deserunt, sed quae debitis
+            hic quia vitae quo iure esse tenetur quos. Exercitationem rerum, incidunt corporis recusandae ad ipsum
+            aliquam!. </div>
+        <br>
+        <br>
+        <img src="./images/sloth.jpg">
+        <br>
+        <br>
+        <div class="aboutAnimalInfo">At this point, you must be blown away by the tribulations our animals have
+            survived, and are now thriving! Please support our mission by adopting one of our furry friends below.
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="shop" id="shop"></div>
+    <br>
+    <br>
+
+    <a href="#menu1" class="top">Back to top</a>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="src/data.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/cart.js"></script>
+</body>
+
+</html>

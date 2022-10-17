@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(212, 172, 78);
+  margin-bottom: 50px;
+  padding: 5px;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(218, 46, 180);
+  justify-content: space-between;
+}
+
+#title {
+  text-decoration: none;
+  color: rgb(246, 244, 246);
+  justify-content: space-between;
+}
+
+img {
+  width: 216px;
+  border-radius: 10px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #c32dbece;
+  color: rgb(243, 239, 239);
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  float: none;
+}
+
+.cartAmount {
+  position: static;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: rgb(253, 250, 250);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+
+/* SHOP ITEMS */
+.shop {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  border: 2px solid #212529;
+  border-radius: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: rgb(234, 226, 226);
+}
+
+.bi-plus-lg {
+  color: rgb(234, 226, 226);
+}
+
+
+/* LABEL AND A FEW OTHER BUTTONS */
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: rgb(252, 251, 251);
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+
+.removeAll {
+  background-color: red;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* SHOPPING CART */
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  justify-content: center;
+  gap: 5px;
+
+}
+
+
+/* SHOPPING CART ITEM */
+.cart-item {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: inline-flex;
+  width: 575px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-price-x {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+.additional-adoptions {
+  padding: 5px;
+  margin: 5px;
+}
+
+.bio-link {
+  color: aqua;
+}
+
+
+/* ABOUT ANIMAL INFO */
+
+.aboutAnimalTitle {
+  color: rgb(251, 251, 253);
+}
+
+.aboutAnimalInfo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  color: cornsilk;
+
+}
+
+.discountCodeLabel {
+  display: contents;
+  font-family: inherit;
+}
+
+/* SHOW/HIDE PET OF THE MONTH */
+.showKoala {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#hiddenKoala {
+  display: none;
+}
+
+
+/* DROPDOWN MENU */
+/* referenced from https://allaboutbasic.com/2022/02/20/click-button-and-show-drop-down-menu-using-css-and-jquery/ */
+ul.menu.active {
+  height: 75px !IMPORTANT;
+  overflow-y: scroll;
+}
+
+.dropdown {
+  display: block;
+  font-size: 14px;
+  margin-left: auto !IMPORTANT;
+  width: 200px;
+}
+
+.dropdown ul.menu {
+  width: 200px;
+}
+
+.dropdown ul.menu li.menu-item {
+  line-height: 1rem;
+  list-style: none;
+}
+
+.dropdown button#menu1 {
+  width: 200px;
+}
+
+.dropdown ul.menu {
+  width: 200px;
+  margin-top: 0px;
+  position: static;
+  text-align: center;
+}
+
+/* ROOSTER ANIMATION */
+#rooster {
+  position: relative;
+}
+
+.deliveryOptions {
+  display: inline-block;
+}
+
+
+/* BACK TO TOP BUTTON */
+.top,
+.centre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  color: aliceblue;
+}
